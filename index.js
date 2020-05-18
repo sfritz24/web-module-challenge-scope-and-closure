@@ -83,11 +83,21 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
+function finalScore(cbInnings, rounds){
   /*Code Here*/
-
+  let home = 0;
+  let away = 0;
+    for(let i = cbInnings; i <= rounds; i++){
+      home = i + rounds;
+    };
+    for(let i = cbInnings; i <=rounds; i++){
+      away = i + rounds;
+    };
+    let score = {"Home": home, "Away": away};
+    return score;
 }
+
+// console.log(finalScore(inning(), 9));
 
 /* Task 4: 
 
