@@ -97,7 +97,7 @@ function finalScore(cbInnings, rounds){
     return score;
 }
 
-console.log(finalScore(inning, 9));
+// console.log(finalScore(inning, 9));
 
 /* Task 4: 
 
@@ -120,8 +120,19 @@ and returns the score at each pont in the game, like so:
 
 Final Score: 6 - 10 */
 
-function scoreboard(/* CODE HERE */) {
+function scoreboard(cbInnings) {
   /* CODE HERE */
+  let arr = ['1st inning: ', '2nd inning: ', '3rd inning: ', '4th inning: ', '5th inning: ', '6th inning: ', '7th inning: ', '8th inning: ', '9th inning: '];
+
+  let homeScore = 0;
+  let awayScore = 0;
+
+  for(let i = 0; i < arr.length; i++){
+    homeScore = homeScore + cbInnings();
+    awayScore = awayScore + cbInnings();
+    console.log(arr[i] + homeScore + ' - ' + awayScore);
+  };
+  return 'Final Score: ' + homeScore + ' - ' + awayScore;
 }
 
-
+console.log(scoreboard(inning));
