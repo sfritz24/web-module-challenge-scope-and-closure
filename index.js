@@ -120,14 +120,14 @@ and returns the score at each pont in the game, like so:
 
 Final Score: 6 - 10 */
 
-function scoreboard(cbInnings) {
+function scoreboard(cbInnings, rounds) {
   /* CODE HERE */
   let arr = ['1st inning: ', '2nd inning: ', '3rd inning: ', '4th inning: ', '5th inning: ', '6th inning: ', '7th inning: ', '8th inning: ', '9th inning: '];
 
   let homeScore = 0;
   let awayScore = 0;
 
-  for(let i = 0; i < arr.length; i++){
+  for(let i = 0; i < rounds; i++){
     homeScore = homeScore + cbInnings();
     awayScore = awayScore + cbInnings();
     console.log(arr[i] + homeScore + ' - ' + awayScore);
@@ -135,4 +135,4 @@ function scoreboard(cbInnings) {
   return 'Final Score: ' + homeScore + ' - ' + awayScore;
 }
 
-console.log(scoreboard(inning));
+console.log(scoreboard(inning, 9));
