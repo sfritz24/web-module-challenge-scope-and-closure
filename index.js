@@ -87,17 +87,17 @@ function finalScore(cbInnings, rounds){
   /*Code Here*/
   let home = 0;
   let away = 0;
-    for(let i = cbInnings; i <= rounds; i++){
-      home = i + rounds;
+    for(let i = 0; i <= rounds; i++){
+      home = cbInnings() + rounds;
     };
-    for(let i = cbInnings; i <=rounds; i++){
-      away = i + rounds;
+    for(let i = 0; i <=rounds; i++){
+      away = cbInnings() + rounds;
     };
     let score = {"Home": home, "Away": away};
     return score;
 }
 
-// console.log(finalScore(inning(), 9));
+console.log(finalScore(inning, 9));
 
 /* Task 4: 
 
