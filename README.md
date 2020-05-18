@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+its like those privacy windows while you can all thats around you and you can tell theres that window you cant be it another window(funtion) or any other items(var, let, const, etc). The things behind that privacy window can come out and get anything you have but you can't go into the window to grab what you need because you don't know if it's even there and the mic into the room is a oneway mic same with the door.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +66,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+between the first and second function. The second function can call appon the things that are within the first function but not the other way around.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+the name is the same since it's part of the arguement and parameter and the new roll does stay the same it's just that the actual number is different because of the random we can not change that. the thing we can change is the name by changing whats within the string of personalDice
+
 c. What is the lexical scope of `newRoll`? 
+
+whats in the second function can access it so if there was another function after the console.log that function can access it. the only reason its being spit out to us is because we're returning the function that contains it.
 
 ### Task 3 - Stretch Goals
 
