@@ -28,9 +28,15 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * counter1 is nested and can't access the let count i can still access the let count outside the function
+ * 
  * 2. Which of the two uses a closure? How can you tell?
  * 
+ * counter1 since we can't access the let count outside the function we have to invoke the function to access it and we aren't actually accessing it
+ * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+ * 
+ * counter1 is best for reuse so if we wanted to make slight changes or similar versions of that function. i can't think of a real instance when counter2 would be useful but it's fine to use so long as you don't need to reuse that code or even the let count
  *
 */
 
